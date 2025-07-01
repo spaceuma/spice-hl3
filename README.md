@@ -36,7 +36,8 @@ Cite this dataset:
 ## Updates <!-- omit in toc -->
 
 - (2025-Jul-01) Leaderboard created.
-- (2025-Jun-16) Public release of dataset repository.
+- (2025-Jul-01) Public release of git repository.
+- (2025-Jun-16) Creation of git repository.
 - (2024-Dec-01) Dataset uploaded to Zenodo in restricted mode.
 - (2024-Sep-10) Lunalab testing campaign.
 
