@@ -1,5 +1,5 @@
 # SPICE-HL3: Single-Photon, Inertial, and Stereo Camera dataset for Exploration of High-Latitude Lunar Landscapes <!-- omit in toc -->
-This repository contains all the suplementary material used during the acquisition and proecessing of the [SPICE-HL3 dataset](https://zenodo.org/records/13970078?preview=1). 
+This repository contains all the suplementary material used during the acquisition and processing of the [SPICE-HL3 dataset](https://zenodo.org/records/13970078?preview=1). 
 
 All the details about this dataset can be found in the associated manuscript.
 
