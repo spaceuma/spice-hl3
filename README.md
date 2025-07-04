@@ -163,7 +163,7 @@ Once submitted, your entry will be reviewed and added to the leaderboard. We enc
 
 ## Licensing
 
-The code is released under the [MIT License](LICENSE).
+The code is released under the [MIT License](LICENSE.txt).
 
 
 
