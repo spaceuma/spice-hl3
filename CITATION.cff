@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the 'preferred-citation' metadata."
+authors:
+  - family-names: "Rodríguez-Martínez"
+    given-names: "David"
+    orcid: "https://orcid.org/0000-0003-4817-9225"
+title: "SPICE-HL3"
+version: 1.0
+repository-code: "https://github.com/spaceuma/spice-hl3"
+date-released: "2025-07-01"
+license: "MIT"
+preferred-citation:
+  authors:
+    - family-names: "Rodríguez-Martínez"
+      given-names: "David"
+      orcid: "https://orcid.org/0000-0003-4817-9225"
+    - family-names: "van der Meer"
+      given-names: "Dave"
+      orcid: "https://orcid.org/0000-0002-7892-9704"
+    - family-names: "Song"
+      given-names: "Junlin"
+      orcid: "https://orcid.org/0000-0001-9690-7253"
+    - family-names: "Bera"
+      given-names: "Abishek"
+      orcid: "https://orcid.org/0000-0002-0196-5969"
+    - family-names: "Pérez del Pulgar"
+      given-names: "C.J."
+      orcid: "https://orcid.org/0000-0001-5819-8310"
+    - family-names: "Olivares-Mendez"
+      given-names: "Miguel Angel"
+      orcid: "https://orcid.org/0000-0001-8824-3231"
+  title: "SPICE-HL3: Single-Photon, Inertial, and Stereo Camera dataset for Exploration of High-Latitude Lunar Landscapes"
+  doi: "10.48550/arXiv.2506.22956"
+  url: "https://arxiv.org/abs/2506.22956"
+  type: article
+  year: "2025"
+  publisher: "arXiv"
