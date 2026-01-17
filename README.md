@@ -50,6 +50,7 @@ Cite this dataset (preprint, not peer reviewed):
   - [Using ORB-SLAM3 on SPICE-HL3 data](#using-orb-slam3-on-spice-hl3-data)
 - [Leaderboard](#leaderboard)
   - [Submitting your results](#submitting-your-results)
+- [Related publications](#related-publications)
 - [References](#references)
 - [Licensing](#licensing)
 
@@ -157,6 +158,12 @@ Once submitted, your entry will be reviewed and added to the leaderboard. We enc
 :heavy_minus_sign: : Denotes trajectories that have not been evaluated.
 
 :x: : Describe trajectories in which localization is lost and unrecovered; the method fails to provide a final estimate. 
+
+## Related publications
+
+SPICE-HL3 has been used in the following works:
+
+[1] Rodríguez-Martínez, David, and Pérez del Pulgar, C.J. [Fast Vision in the Dark: A Case for Single-Photon Imaging in Planetary Navigation](https://arxiv.org/abs/2510.10597). *18th Symposium on Advanced Space Technologies in Robotics and Automation (ASTRA)*, 2025, Leiden, The Netherlands.
 
 ## References
 1. [SPAD512S System Documentation](https://piimaging.com/doc-spad512s)
