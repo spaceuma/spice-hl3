@@ -47,7 +47,7 @@ function digitize_from_1bit(file_path, desired_bitdepth, cam_type, num_images)
             error('❌ Unsupported camera type: %s. Use "512S" or "SS2TH".', cam_type);
     end
 
-    frames_per_img = 2^desired_bitdepth;
+    frames_per_img = 2^desired_bitdepth - 1; % e.g., 15 for 4-bit, 255 for 8-bit
 
     src_dir = fullfile(file_path,'png','1bit');
 
