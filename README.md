@@ -33,7 +33,8 @@ Cite this dataset (preprint, not peer reviewed):
 
 ## Updates <!-- omit in toc -->
 
-- (2026-Jan-21) Paper has been accepted for publication in Sci.Data. 
+- (2026-Jan-21) Paper has been accepted for publication in Sci.Data.
+- (2026-Jan-17) Correction to digitization scripts in `./spad512-reader`
 - (2025-Aug-21) Dataset made public in Zenodo.
 - (2025-Jul-01) Leaderboard created.
 - (2025-Jul-01) Public release of git repository.
