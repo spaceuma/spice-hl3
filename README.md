@@ -26,9 +26,13 @@ Cite this dataset (preprint, not peer reviewed):
 @article{rodriguez2025spicehl3,
   title={{SPICE}-{HL3}: Single-Photon, Inertial, and Stereo Camera dataset for Exploration of High-Latitude Lunar Landscapes},
   author = {Rodríguez-Martínez, David and van der Meer, Dave and Song, Junlin and Bera, Abishek and Pérez del Pulgar, C.J. and Olivares-Mendez, Miguel Angel},
-  doi = {10.48550/arXiv.2506.22956},
-  url = {https://arxiv.org/abs/2506.22956},
-  year = {2025}
+  journal={Scientific Data},
+  volume={},
+  number={},
+  pages={},
+  doi = {10.1038/s41597-026-06668-8},
+  url = {[https://arxiv.org/abs/2506.22956](https://www.nature.com/articles/s41597-026-06668-8#citeas)},
+  year = {2026}
 }
 ```
 
