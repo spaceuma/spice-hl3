@@ -1,8 +1,9 @@
 # SPICE-HL3: Single-Photon, Inertial, and Stereo Camera dataset for Exploration of High-Latitude Lunar Landscapes <!-- omit in toc -->
-This repository contains all the suplementary material used during the acquisition and processing of the [SPICE-HL3 dataset](https://zenodo.org/records/13970078). 
+This repository contains all the supplementary material used during the acquisition and processing of the [SPICE-HL3 dataset](https://zenodo.org/records/13970078). 
 
 All the details about this dataset can be found in the associated manuscript.
 
+[![Static Badge](https://img.shields.io/badge/paper-SciData-black)](https://www.nature.com/articles/s41597-026-06668-8)
 [![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg)](https://arxiv.org/abs/2506.22956)
 [![Static Badge](https://img.shields.io/badge/YouTube-video-red?style=flat)](https://youtu.be/d7sPeO50_2I)
 [![Static Badge](https://img.shields.io/badge/Zenodo-dataset-blue)](https://zenodo.org/records/13970078)
@@ -19,7 +20,7 @@ Authors:
 - Miguel Angel Olivares-Mendez [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-8824-3231)
 
 Cite this dataset (preprint, not peer reviewed):
-> Rodríguez-Martínez, D., van der Meer, D., Song, J., Bera, A., Pérez del Pulgar, C., & Olivares-Mendez, M. A. (2025). SPICE-HL3: Single-Photon, Inertial, and Stereo Camera dataset for Exploration of High-Latitude Lunar Landscapes. https://doi.org/10.48550/arXiv.2506.22956.
+> Rodríguez-Martínez, D., van der Meer, D., Song, J., Bera, A., Pérez del Pulgar, C., & Olivares-Mendez, M. A. (2026). SPICE-HL3: Single-Photon, Inertial, and Stereo Camera dataset for Exploration of High-Latitude Lunar Landscapes. *Scientific Data*. https://doi.org/10.1038/s41597-026-06668-8
 
 ```
 @article{rodriguez2025spicehl3,
@@ -33,7 +34,7 @@ Cite this dataset (preprint, not peer reviewed):
 
 ## Updates <!-- omit in toc -->
 
-- (2026-Jan-21) Paper has been accepted for publication in Sci.Data.
+- (2026-Jan-21) Paper has been accepted for publication in Sci.Data!
 - (2026-Jan-17) Correction to digitization scripts in `./spad512-reader`
 - (2025-Aug-21) Dataset made public in Zenodo.
 - (2025-Jul-01) Leaderboard created.
@@ -76,7 +77,7 @@ This section contains a series of MATLAB scripts designed to read and export dat
 
 
 >[!NOTE]
-> For additional information on any of these funtions, simply run `help [function_name]` in the command window. 
+> For additional information on any of these functions, simply run `help [function_name]` in the command window. 
 
 ### Data structure
 The previous scripts have been updated to work with any data structure given the appropriate updates (check function help text for more info). As is, however, the scripts are designed to work with the data structure created by default when images are recorded through Pi-Imaging's camera GUI. 
@@ -97,7 +98,7 @@ From the SPAD512S, data is saved by default based on the following directory str
 
 `RAW0000X.BIN` are binary files containing a maximum of 1000 1-bit frames (i.e., ~32MB). Multiple .BIN files will be saved during longer acquisitions. 
 
-The scripts are designed to work regardless of the number of .BIN files saved but always within single acquisitions (i.e., the file path to the `acq0000X` folder of choice needs to be passed as an argument to the function `export_spad_frames()`). The scripts will need to be updated for them to read data from multiple acquisitions at once (i.e., from multiple `acq0000X` folders). 
+The scripts are designed to work regardless of the number of .BIN files saved, but always within single acquisitions (i.e., the file path to the `acq0000X` folder of choice needs to be passed as an argument to the function `export_spad_frames()`). The scripts will need to be updated for them to read data from multiple acquisitions at once (i.e., from multiple `acq0000X` folders). 
 
 ### Compatibility
 
@@ -110,13 +111,13 @@ Due to ROS2-related issues and potential hardware synchronization limitations, s
 The raw data frames captured by the ZED2 stereo camera were processed following these steps:
 
 1. Run the [*stereo_file_matching.m*](/data-cleaner/stereo_file_matching.m) script to remove all left-to-right mismatched frames, and viceversa. Just swap target and reference. Output `left/data` and `right/data` folders with equal number of frames.
-2. Run the [*clean_delayed_frames.m*](/data-cleaner/clean_delayed_frames.m) script on the left and right data folders filter out all heavily delayed frames. Output data folders with sequentially timestampped frames.
-3. Run the [*reID_frames.m*](/data-cleaner/reID_frames.m) script to, as the name suggest, reID all frames.
+2. Run the [*clean_delayed_frames.m*](/data-cleaner/clean_delayed_frames.m) script on the left and right data folders, filter out all heavily delayed frames. Output data folders with sequentially timestampped frames.
+3. Run the [*reID_frames.m*](/data-cleaner/reID_frames.m) script to, as the name suggests, reID all frames.
 4. Finally, conduct a quality check with [*finalcheck_left_right_frames.m*](/data-cleaner/finalcheck_left_right_frames.m) to confirm all timestamps associated with left camera frames have matching right camera frames.
 
 ## Data processing and evaluation
 
-- [*disparity.py*](/data-processing/disparity.py): computes disparity maps for multiple stereo image and saves the output as PNG images.
+- [*disparity.py*](/data-processing/disparity.py): computes disparity maps for multiple stereo images and saves the output as PNG images.
 
 ### Using ORB-SLAM3 on SPICE-HL3 data 
 
@@ -139,10 +140,10 @@ To have your results included in the leaderboard, please open a new issue titled
 - Reference (arXiv, conference, or journal publication describing your method )
 ```
 
-Once submitted, your entry will be reviewed and added to the leaderboard. We encourage reproducibility and transparency, feel free to include any links to code, pre-trained models, or logs. If the data provided with SPICE-HL3 has been preprocessed in any way, please include details as to the methods used.  
+Once submitted, your entry will be reviewed and added to the leaderboard. We encourage reproducibility and transparency; feel free to include any links to code, pre-trained models, or logs. If the data provided with SPICE-HL3 has been preprocessed in any way, please include details as to the methods used.  
 
 >[!IMPORTANT]
-> Note that ATE must be computed using alignment based on the initial estimated pose (no global SE(3) alignment such as Horn's).
+> Note that ATE must be computed using alignment based on the initial estimated pose (no global SE(3) alignment, such as Horn's).
 
 > [!NOTE]
 > To ensure fairness and comparability between methods evaluated on different subsets of the dataset, the ranking is based on a globally weighted average ATE, where each trajectory's contribution is weighted by its length. If a method fails to produce a valid estimated trajectory on a given sequence, a **penalty RMSE of 1 m and max ATE of 5 m** are applied for that trajectory, weighted by its length. This ensures that methods are fairly penalized for non-robust behavior.
