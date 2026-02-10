@@ -31,7 +31,7 @@ Cite this dataset:
   number={},
   pages={},
   doi = {10.1038/s41597-026-06668-8},
-  url = {[https://arxiv.org/abs/2506.22956](https://www.nature.com/articles/s41597-026-06668-8#citeas)},
+  url = {https://www.nature.com/articles/s41597-026-06668-8},
   year = {2026}
 }
 ```
