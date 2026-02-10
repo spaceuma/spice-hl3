@@ -7,7 +7,7 @@ All the details about this dataset can be found in the associated manuscript.
 [![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg)](https://arxiv.org/abs/2506.22956)
 [![Static Badge](https://img.shields.io/badge/YouTube-video-red?style=flat)](https://youtu.be/d7sPeO50_2I)
 [![Static Badge](https://img.shields.io/badge/Zenodo-dataset-blue)](https://zenodo.org/records/13970078)
-
+[![Static Badge](https://img.shields.io/badge/HuggingFace-dataset-yellow)](https://huggingface.co/datasets/UMASpaceRobotics/spice-hl3)
 
 ![spice-hl3_cover ](/img/dataset_cover.png)
 
@@ -38,6 +38,7 @@ Cite this dataset:
 
 ## Updates <!-- omit in toc -->
 
+- (2026-Feb-10) Dataset is now also available on 🤗HuggingFace.
 - (2026-Jan-21) Paper has been accepted for publication in Sci.Data!
 - (2026-Jan-17) Correction to digitization scripts in `./spad512-reader`
 - (2025-Aug-21) Dataset made public in Zenodo.
