@@ -20,16 +20,15 @@ Authors:
 - Miguel Angel Olivares-Mendez [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-8824-3231)
 
 Cite this dataset:
-> Rodríguez-Martínez, D., van der Meer, D., Song, J., Bera, A., Pérez del Pulgar, C., & Olivares-Mendez, M. A. (2026). SPICE-HL3: Single-Photon, Inertial, and Stereo Camera dataset for Exploration of High-Latitude Lunar Landscapes. *Scientific Data*. https://doi.org/10.1038/s41597-026-06668-8
+> Rodríguez-Martínez, D., van der Meer, D., Song, J., Bera, A., Pérez del Pulgar, C., & Olivares-Mendez, M. A. (2026). SPICE-HL3: Single-Photon, Inertial, and Stereo Camera dataset for Exploration of High-Latitude Lunar Landscapes. *Scientific Data* 13, 374. https://doi.org/10.1038/s41597-026-06668-8
 
 ```
 @article{rodriguez2025spicehl3,
   title={{SPICE}-{HL3}: Single-Photon, Inertial, and Stereo Camera dataset for Exploration of High-Latitude Lunar Landscapes},
   author = {Rodríguez-Martínez, David and van der Meer, Dave and Song, Junlin and Bera, Abishek and Pérez del Pulgar, C.J. and Olivares-Mendez, Miguel Angel},
   journal={Scientific Data},
-  volume={},
-  number={},
-  pages={},
+  volume={13},
+  number={374},
   doi = {10.1038/s41597-026-06668-8},
   url = {https://www.nature.com/articles/s41597-026-06668-8},
   year = {2026}
